@@ -5,6 +5,7 @@ function buildMetadata(sample, index) {
   d3.json("samples.json").then(function(Data) {
 
     //sample data
+    var id = sample.otu_ids[index];
     var otu_ids = sample.otu_ids.slice(0,10);
     var samp_vals = sample.sample_values.slice(0,10);
     var otu_labels = sample.otu_labels.slice(0,10);
